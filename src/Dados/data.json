@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "desc": "Betoneira cinza",
+        "imagem": "../../public/betoCinza.jpg",
+        "valor": 400.00
+    },
+      {
+        "id": 2,
+        "desc": "Betoneira Laranja",
+        "imagem": "../../public/betoLaranja.webp",
+        "valor": 450.00
+    },
+      {
+        "id": 3,
+        "desc": "Betoneira Amarela",
+        "imagem": "../../public/betoAmarela.webp",
+        "valor": 620.00
+    }
+]
