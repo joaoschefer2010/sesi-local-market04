@@ -31,3 +31,9 @@ body{
     align-items: center;
     gap: 50px;
 }
+
+.inicio{
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
