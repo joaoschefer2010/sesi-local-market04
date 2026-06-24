@@ -2,6 +2,8 @@ let produtos
 
 window.onload = function () {
     var storedUser = localStorage.getItem("usuario")
+    if (!storedUser) return;
+
     var user = JSON.parse(storedUser)
     var dataEntrada = new Date(user.dataEntrada)
 
@@ -49,10 +51,23 @@ document.getElementById("produtos-container").addEventListener("click", function
     const btn = event.target.closest(".adicionar")
     if(!btn) return
 
+    event.preventDefault()
+
     const indexDoProduto = btn.dataset.indice
     const produtoSelecionado = produtos[indexDoProduto]
-    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || []
-    carrinho.push(produtoSelecionado)
-    localStorage.setItem("carrinho", JSON.stringify(carrinho))
-    alert("Produto adicionado com sucesso!!!")
+
+    if (produtoSelecionado) {
+        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || []
+        
+        
+        carrinho.push({
+            id: produtoSelecionado.id,
+            desc: produtoSelecionado.desc,
+            imagem: produtoSelecionado.imagem,
+            valor: produtoSelecionado.sal
+        })
+        
+        localStorage.setItem("carrinho", JSON.stringify(carrinho))
+        alert(`${produtoSelecionado.desc} adicionado ao carrinho com sucesso!`)
+    }
 })

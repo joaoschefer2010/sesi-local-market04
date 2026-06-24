@@ -1,20 +1,20 @@
 [
     {
         "id": 1,
-        "desc": "Betoneira cinza",
-        "imagem": "../../public/betoCinza.jpg",
+        "desc": "Spider-Man",
+        "imagem": "../../public/tenis1.png",
         "valor": 400.00
     },
       {
         "id": 2,
-        "desc": "Betoneira Laranja",
-        "imagem": "../../public/betoLaranja.webp",
+        "desc": "Iron Man",
+        "imagem": "../../public/tenis2.png",
         "valor": 450.00
     },
       {
         "id": 3,
-        "desc": "Betoneira Amarela",
-        "imagem": "../../public/betoAmarela.webp",
+        "desc": "Captain America",
+        "imagem": "../../public/tenis3.png",
         "valor": 620.00
     }
 ]

@@ -7,6 +7,7 @@
     --errorbg: lightpink;
     --texto: #ffffff;
     --dark: #090909;
+    
 }
 
 *{
@@ -53,7 +54,7 @@ body{
     background-color: var(--azulmedio);
     width: 300px;
     height: 300px;
-    border: 2px solid var(--laranja);
+    border: 2px solid var(--azulclaro);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,7 +69,7 @@ body{
     border-radius: 100%;
     width: 100px;
     height: 100px;
-    border: 2px solid var(--laranja);
+    border: 2px solid var(--azulclaro);
     box-shadow: 0px 5px 15px var(--dark);
 }
 
@@ -106,7 +107,7 @@ body{
     background-color: transparent;
     border: none;
     width: 100%;
-    border-bottom: 2px solid var(--laranja);
+    border-bottom: 2px solid var(--azulclaro);
     font-size: 18px;
     color: var(--text);
 }
@@ -129,7 +130,7 @@ input:focus{
 .btn-login{
     padding: 10px;
     width: 100%;
-    background-color: var(--laranja);
+    background-color: var(--azulclaro);
     font-size: 20px;
     border: none;
     margin-top: 20px;
